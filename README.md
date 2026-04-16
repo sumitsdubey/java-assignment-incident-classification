@@ -170,6 +170,37 @@ POST /api/documents/text
 ```
 
 ---
+### 📌 Endpoint
+
+```
+POST /api/documents/file
+```
+### 📥 Request
+```
+POST /api/documents
+Content-Type: multipart/form-data
+
+Form Data:
+
+Key	Type	Description
+file	File	PDF file to upload
+
+```
+
+### 📤 Response
+```
+{
+"success": true,
+"message": "Success",
+"data": {
+"id": 2,
+"originalText": "Extracted text from PDF...",
+"createdAt": "2026-04-16T08:56:04.4259334"
+},
+"timestamp": "2026-04-16T08:56:08.1446976"
+}
+```
+---
 
 ## 🟢 5. Get Document Classification Result
 
